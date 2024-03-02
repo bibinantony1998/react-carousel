@@ -1,0 +1,123 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	height: 100%;
+	width: 100%;
+	user-select: none;
+	color: var(--textColor);
+	.flex_1_1_10 {
+		flex: 1 1 10px;
+	}
+	.min_width_125 {
+		min-width: 125px;
+	}
+	.text_color {
+		color: var(--textColor);
+	}
+	.primary_btn {
+		background-color: var(--themeColor);
+		color: var(--white);
+		padding: 10px 20px;
+		outline: none !important;
+		box-shadow: none !important;
+		border-radius: 4px;
+		border: 1px solid var(--themeColor);
+		min-height: 32px;
+		&:disabled,
+		&[disabled] {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+	.secondary_btn {
+		background-color: var(--mainBg);
+		color: var(--themeColor);
+		padding: 20px 20px;
+		outline: none !important;
+		box-shadow: none !important;
+		border-radius: 4px;
+		border: 1px solid var(--mainBg);
+		min-height: 32px;
+		&:disabled,
+		&[disabled] {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+	.delete_btn {
+		background-color: var(--deleteBg);
+		color: var(--invalid);
+		padding: 20px 20px;
+		outline: none !important;
+		box-shadow: none !important;
+		border-radius: 4px;
+		border: 1px solid var(--deleteBg);
+		min-height: 32px;
+		&:disabled,
+		&[disabled] {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+	.hidden_btn {
+		width: 0 !important;
+		height: 0 !important;
+		border: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+		opacity: 0 !important;
+		padding: 0 0;
+	}
+	.main_form_text_area {
+		width: 100%;
+		min-height: 200px;
+		border: 1px solid var(--formBorder);
+		padding: 15px;
+		border-radius: 4px;
+		outline: none !important;
+		box-shadow: none !important;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.invalid {
+		position: absolute;
+		top: -17px;
+		right: 0;
+		font-size: 12px;
+		color: var(--invalid);
+	}
+	.back_btn {
+		color: var(--themeColor);
+		font-size: 25px;
+		> span {
+			cursor: pointer;
+		}
+	}
+	.text_color {
+		color: var(-textColor);
+	}
+	.main_icon {
+		font-size: 40px;
+		color: var(--white);
+	}
+	.height_0 {
+		height: 0px !important;
+	}
+
+	input::file-selector-button {
+		cursor: pointer;
+	}
+	button:focus {
+		outline: none !important;
+	}
+}
+
+.error_boundary {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
